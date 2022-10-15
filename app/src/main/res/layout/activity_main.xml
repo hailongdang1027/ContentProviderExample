@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstName"
+            android:hint="First Name"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastName"
+            android:hint="Last Name"
+            android:layout_below="@id/firstName"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender"
+            android:hint="Gender"
+            android:layout_below="@id/lastName"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/place"
+            android:hint="PlaceOfBirth"
+            android:layout_below="@id/gender"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scholarship"
+            android:hint="Scholarship"
+            android:layout_below="@id/place"
+            android:textColorHint="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_add_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Add Student"
+            android:layout_below="@id/scholarship"
+            android:layout_marginTop="20dp"
+            android:onClick="onClickAddStudent"/>
+
+        <Button
+            android:id="@+id/btn_load_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Load"
+            android:layout_below="@id/btn_add_student"
+            android:layout_marginTop="20dp"
+            android:onClick="onClickLoadStudent"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
